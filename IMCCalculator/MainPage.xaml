@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="IMCCalculator.MainPage">
+
+    <StackLayout Padding="20">
+        <Label Text="Calculadora de IMC" FontSize="20" HorizontalOptions="Center" Margin="0,0,0,20" />
+
+        <Entry x:Name="HeightEntry" Placeholder="Altura (Mts)" Keyboard="Numeric" Margin="0,0,0,10" />
+        <Entry x:Name="WeightEntry" Placeholder="Peso (kg)" Keyboard="Numeric" Margin="0,0,0,10" />
+
+        <Button Text="Calcular" Clicked="CalculateButton_Clicked" Margin="0,0,0,20" />
+
+        <Label x:Name="BMIResultLabel" FontSize="18" TextColor="Green" HorizontalOptions="Center" />
+    </StackLayout>
+
+</ContentPage>
